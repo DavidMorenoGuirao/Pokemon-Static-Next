@@ -1,12 +1,12 @@
 import { Grid } from "@nextui-org/react"
 import { FavoriteCardPokemon } from "./FavoriteCardPokemon";
-
+import { FC } from "react";
 
 interface Props {
     pokemons: number[];
 }
 
-export const FavoritePokemon: React.FC<Props> = ({ pokemons }) => {
+export const FavoritePokemon: FC<Props> = ({ pokemons }) => {
   return (
     <Grid.Container gap={ 2 } direction='row' justify='flex-start'>
                 {
